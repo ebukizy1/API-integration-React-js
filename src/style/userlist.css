@@ -1,0 +1,29 @@
+
+
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* You can change this as needed */
+    gap: 10px; 
+  }
+  
+  /* Individual image items */
+  .image-item {
+    flex: 0 0 calc(20% - 10px); /* Adjust the width (20% for 5 images per row) and gap */
+    /* You can use other styles to control spacing, padding, and alignment */
+  }
+  
+  /* Style for the image itself */
+  .user-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Adjustments for smaller screens */
+  @media (max-width: 768px) {
+    .image-item {
+      flex: 0 0 calc(33.33% - 10px); /* For 3 images per row on smaller screens */
+    }
+  }
+  
